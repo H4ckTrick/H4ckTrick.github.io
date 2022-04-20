@@ -5,8 +5,9 @@ iconURL: assets/default-icon.png
 permalink: :slug
 
 social:
-  twitter: _SupunKavinda
   github: SupunKavinda
+  youtube: "Rincón hacker"
+  instagram: rinconh4ck
 
 plugins:
  - jekyll-feed
