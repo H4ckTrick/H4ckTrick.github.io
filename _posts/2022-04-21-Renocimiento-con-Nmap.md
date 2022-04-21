@@ -67,7 +67,7 @@ nmap -p- --open --min-rate 5000 -n -Pn -sS 192.168.20.100
 ```bash 
 nmap -sn -PS 443 192.168.20.0/24
 ```
-#### Detectar servicios, versión ... 
+#### Detectar servicios, versión y S.O
 - **-sCV** ➜ Fusión de parámetros **-sC** y **-sV**
 
 ```bash 
