@@ -69,8 +69,8 @@ curl -O https://h4cktrick.github.io/script.py
 ### Pentesting
 Ahora veremos pequeños scripts con curl, desarollados por mi, para realizar pentesting básico. 
 #### Fuzzing
-Este script, podefecto utiliza un dicionario situado en la ruta **/usr/share/rockyou.txt**. Para que funcione solo 
-es necesario indicar el host **(-h)** y el diccionario **(-w)**.
+Este script para descubrir directorios y archivos, por defecto utiliza un dicionario situado en la ruta **/usr/share/rockyou.txt**. 
+Para que funcione solo es necesario indicar el host **(-h)** y el diccionario **(-w)**.
 ```bash
 #!/bin/bash
 #Autor: Jose Conde
@@ -80,7 +80,14 @@ Amarillo="\e[93m"
 Normal="\e[m"
 Verde="\e[32m"
 Rojo="\e[91m"
- 
+
+ctrl_c(){
+	clear
+	echo -e "${Amarillo}[-]${Rojo} Saliendo... ${Normal}"
+	exit 1
+}
+
+
 #Parameters
 while getopts "h:w:" opc; do
     case $opc in
@@ -113,3 +120,40 @@ helpPanel(){
 #Arguments
 [[ $# -eq 0 ]] && helpPanel || fuzz
 ```
+#### Subdominios
+Ahora con otro script muy sencillo vamos a descubrir subdominios
+```bash 
+#!/bin/bash
+#Autor: Jose Conde
+ 
+#Colours
+Amarillo="\e[93m"
+Normal="\e[m"
+Verde="\e[32m"
+Rojo="\e[91m"
+ 
+ctrl_c(){
+	clear
+	echo -e "${Amarillo}[-]${Rojo} Saliendo... ${Normal}"
+	exit 1
+}
+
+if [ $1 ] && [ $2 ]; then
+    echo -e "[!] Escaneando: ${Amarillo}$1${Normal}"
+    echo -e "[!] Diccionario: ${Amarillo}$2${Normal}"
+    for p in "http://" "https://"; do
+        for host in $(cat $2); do
+            subdomain=$(curl -s -L -w "%{http_code}\n" "$p$host.$1" -o /dev/null -k)
+            if [[ subdomain -eq 200 ]]; then
+                echo -e "\n\t[+] ${Verde}$p$host.$1${Normal}"
+            fi
+        done
+    done
+else
+    echo -e "Uso $0 <domain> <dicionario>"
+fi
+```
+
+
+
+
