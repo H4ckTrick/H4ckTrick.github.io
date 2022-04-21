@@ -8,7 +8,7 @@ author: Conde
 - [Instalación](#instalación)
 - [Parámetros](#párametros)
 - [Pentesting con curl](#pentesting)
-  - [Descubrimiento de directorios](#descrubrimiento de directorios )
+  - [Descubrimiento de directorios](#descrubrimiento de directorios)
 
 
 ### Definción
