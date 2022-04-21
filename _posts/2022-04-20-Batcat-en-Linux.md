@@ -8,6 +8,7 @@ author: Conde
 - [Instalación](#instalación)
 - [Parámetros](#párametros)
 - [Alias](#alias)
+- [Cambiar el tema](#tema)
 
 ### Definción
 Batcat, es un comando que nos permite visualizar el contenido de los ficheros de una forma más comoda, ya que reconoce
@@ -54,6 +55,20 @@ Hecho eso, cerramos nuestra terminal para aplicar cambios o ejecutamos el siguie
 con el fichero de tu shell correspondiente.
 ```bash
 source ~/.zshrc
+```
+
+## Tema
+Cuando usamos el parametros -L i \--list-themes, no muestra todos los temas que tenemos para usar con batcat, si queremos
+modificarlo por uno que nos guste más lo que debemos hacer es lo siguiente **(Hay dos formas)**.
+### Primera forma
+Esta primera forma modificamos el tema con el propio comando batcat
+```bash
+bat --theme=DarkNeon
+```
+### Segunda forma
+En esta segunda forma, hacemos lo mismo pero cambiando una variable de entorno que usa batcat
+```bash
+export BAT_THEME="DarkNeon"
 ```
 
 
