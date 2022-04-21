@@ -20,7 +20,7 @@ WPScan, es una herramienta que nos permite hacer una enumeración completa de Wo
 - **\--random-agent** ➜ Bypass a firewall 
 - **\--no-banner** ➜ No muestra el banner 
 - **\--stealthy** ➜ Este modo usa \--ramdon-user-agent, \--detention-mode y \--plugins-version-detection
-- **\-threads** ➜ Indicamos el número de hilos
+- **-t** o **\--max-threads** ➜ Indicamos el número de hilos (Por defecto: 5)
 
 ### Uso 
 #### Enumeración básica de wordpress
