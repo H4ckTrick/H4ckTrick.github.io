@@ -8,7 +8,7 @@ author: Conde
 - [Instalación](#instalación)
 - [Parámetros](#párametros)
 - [Pentesting con curl](#pentesting)
-  - [Descubrimiento de directorios](#descrubrimiento%20de%20directorios)
+  - [Descubrimiento de directorios](#fuzzing)
 
 
 ### Definción
@@ -68,7 +68,7 @@ curl -O https://h4cktrick.github.io/script.py
 
 ### Pentesting
 Ahora veremos pequeños scripts con curl, desarollados por mi, para realizar pentesting básico. 
-#### Descrubrimiento de directorios 
+#### Fuzzing
 Este script, podefecto utiliza un dicionario situado en la ruta **/usr/share/rockyou.txt**. Para que funcione solo 
 es necesario indicar el host **(-h)** y el diccionario **(-w)**.
 ```bash
