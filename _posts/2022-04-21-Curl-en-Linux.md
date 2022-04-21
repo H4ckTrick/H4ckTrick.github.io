@@ -35,18 +35,18 @@ brew install curl
 
 ### Párametros
 - **-s o \--silent** ➜ Modo silencioso
-- **-X o \--request** ➜ Nos permite realizar peticiones (Post y Get)
+- **-X o \--request** ➜ Nos permite realizar peticiones
 - **-L o \--location** ➜ Aplica redirección 
-- **-w o \--write-out** ➜ Indicamos contenido a ver (E.j -w "%{http_code}\n")
+- **-w o \--write-out** ➜ Indicamos contenido a mostrar
 - **-K o \--insecure** ➜ No aplicamos certificado SSL 
 - **-I o \--head** ➜ Vemos las cabezeras enviadas
 - **-d o \--data** ➜ Nos permite enviar data a una dirección
-- **-T o \--upload-file** ➜ Permite subir un archivo, por ejemplo a FTP
+- **-T o \--upload-file** ➜ Permite subir un archivo
 - **-o o \--output** ➜ Permite almacenar el output
 - **-H o \--header** ➜ Permite enviar una cabezera personalizada
 - **-U o \--user** ➜ Indicamos el usuario y contraseña 
 - **-A o \--user-agent** ➜ Permite modificar el User-Agent 
-- **-x o \--proxy** ➜ Permite indicar la dirección de un proxy, para que el realize la petición 
+- **-x o \--proxy** ➜ Permite indicar la dirección de un proxy
 
 #### Ejemplos
 Ver codigo de estado de la página 
