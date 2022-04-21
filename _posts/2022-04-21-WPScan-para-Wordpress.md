@@ -12,7 +12,7 @@ author: Conde
 WPScan, es una herramienta que nos permite hacer una enumeración completa de WordPress.
 
 ### Parametros 
-- **--url** ➜ Indicamos la url de la web
+- **\--url** ➜ Indicamos la url de la web
 - **-e** o **\--enumeration** ➜ modo de enumeración
 - **\--username** ➜ Indicamos nombre de usuario
 - **-w** ➜ Wordlist a usar 
@@ -20,6 +20,7 @@ WPScan, es una herramienta que nos permite hacer una enumeración completa de Wo
 - **\--random-agent** ➜ Bypass a firewall 
 - **\--no-banner** ➜ No muestra el banner 
 - **\--stealthy** ➜ Este modo usa \--ramdon-user-agent, \--detention-mode y \--plugins-version-detection
+- **\-threads** ➜ Indicamos el número de hilos
 
 ### Uso 
 #### Enumeración básica de wordpress
@@ -57,4 +58,3 @@ Este tipo de fuerza bruta evitara que nos banee.
 ```bash 
 wpscan -u http://prueba.com --username admin -w /usr/share/wordlists/rockyou.txt --random-agent 
 ```
-
