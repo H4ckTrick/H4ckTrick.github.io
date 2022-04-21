@@ -10,9 +10,9 @@ author: Conde
   - [ip](#ip)
   - [ifconfig](#ifconfig)
 - [Netdiscover](#netdiscover)
-- [Nmap]()
-- [Bash]()
-- [PowerShell]()
+- [Nmap](#nmap)
+- [Bash](#bash)
+- [PowerShell](#powershell)
 
 ### Tarjetas 
 #### Sys
@@ -71,7 +71,26 @@ nmap -sn -PS 192.168.0.0/24
 ### Bash 
 Podemos crearnos un pequeño script en bash, para identificar todos los equipos conectados a nuestra red.
 ```bash
+#!/bin/bash
+#Autor: Jose Conde
 
+#Colours
+Amarillo="\e[93m"
+Normal="\e[m"
+Verde="\e[32m"
+Rojo="\e[91m"
+
+#Exit ctrl + c 
+ctrl_c(){
+	clear
+	echo -e "${Amarillo}[-]${Rojo} Saliendo... ${Normal}"
+	exit 1
+}
+
+echo -e "[*] Escaneando la red: ${Amarillo}192.168.0.0/24${Normal}"
+for i in $(seq 2 254); do
+	timeout 1 bash -c "ping -c1 192.168.0.$i" > /dev/null && echo -e "\t[*] Equipo 192.168.0.$i - Activo" &
+done; wait
 ```
 
 ### PowerShell 
