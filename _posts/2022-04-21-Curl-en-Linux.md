@@ -89,7 +89,6 @@ ctrl_c(){
 	exit 1
 }
 
-
 #Parameters
 while getopts "h:w:" opc; do
     case $opc in
