@@ -71,5 +71,16 @@ Podemos crearnos un pequeño script en bash, para identificar todos los equipos 
 ### PowerShell 
 De la misma forma que hemos hecho antes, tambien podemos hacerlo en powershell
 ```PowerShell 
-Test-Conection 
+#!/usr/bin/pwsh
+#Autor: Jose Conde
+
+#Main
+1..254 | ForEach-Object -Parallel {
+    $status = Test-Connection 192.168.0.$_ -count 1 -Quiet 
+    
+    if ($status)
+    {
+        Write-Host "[!] Equipo: 192.168.0.$_" -ForegroundColor Yellow -NoNewline; Write-Host " - Encendido"  -ForegroundColor Green
+    }
+} -ThrottleLimit 100
 ```
