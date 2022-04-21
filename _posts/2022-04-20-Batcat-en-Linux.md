@@ -62,7 +62,7 @@ Mostrar número de linea
 ```bash
 bat -n /etc/passwd
 ```
-Mostrar todos los carazteres 
+Mostrar todos los caracteres 
 ```bash
 bat -A /etc/passwd
 ```
