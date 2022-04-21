@@ -8,6 +8,8 @@ author: Conde
 - [Instalación](#instalación)
 - [Parámetros](#párametros)
 - [Pentesting con curl](#pentesting)
+  - Descubrimiento de directorios 
+  - 
 
 ### Definción
 Curl, es un comando que nos permite realizar peticiones a páginas web, subir o descargar archivos tantos de servidores
@@ -66,6 +68,47 @@ curl -O /dev/null http://h4cktrick.github.io/script.py
 
 ### Pentesting
 Ahora veremos pequeños scripts con curl, desarollados por mi, para realizar pentesting básico. 
+#### Descrubrimiento de directorios con curl
 ```bash
-
+#!/bin/bash
+#Autor: Jose Conde
+ 
+#Colours
+Amarillo="\e[93m"
+Normal="\e[m"
+Verde="\e[32m"
+Rojo="\e[91m"
+ 
+#Parameters
+while getopts "h:w:" opc; do
+    case $opc in
+        h) host=$OPTARG ;;
+        w) dic=$OPTARG ;;
+    esac
+done
+ 
+#Main
+fuzz(){
+echo -e "[+] Escaneando: ${Amarillo}$host${Normal}"
+echo -e "[*] Dicionario: ${Amarillo}${dic-/usr/share/rockyou.txt}${Normal}\n"
+for i in $(cat ${dic:-/usr/share/rockyou.txt}); do
+    estado=$(curl -s -L -w "%{http_code}\n" http://$host/$i -o /dev/null &)
+ 
+    if [[ $estado -eq 200 ]]; then
+        echo -e "\t[*] ${Amarillo}$i${Normal} (Reply: ${Verde}$estado${Normal})"
+    fi
+    sleep 0.5
+done }
+ 
+#Help Panel
+helpPanel(){
+    echo -e "[?] Uso: $0 -h <host> -w <diccionary>"
+    echo -e "\t-h) Host (ej. 127.0.0.1)"
+    echo -e "\t-w) Diccionary (ej. /usr/share/worlist/rockyou.txt)"
+    exit 0
+}
+ 
+#Arguments
+[[ $# -eq 0 ]] && helpPanel || fuzz
 ```
+
