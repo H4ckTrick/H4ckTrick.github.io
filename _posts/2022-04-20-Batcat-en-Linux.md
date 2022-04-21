@@ -49,7 +49,7 @@ batcat -l python script.py
 Como este comando es mucho mejor que cat, en mi opinión, lo que haremos en un alias permanente, 
 para ello en nuestro fichero **~/.bashrc** o **~/.zshrc** agregamos el siguiente comando.
 ```bash
-alias cat="batcat"
+alias cat="bat"
 ```
 Hecho eso, cerramos nuestra terminal para aplicar cambios o ejecutamos el siguiente comando, 
 con el fichero de tu shell correspondiente.
