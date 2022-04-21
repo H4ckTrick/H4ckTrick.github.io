@@ -58,7 +58,7 @@ source ~/.zshrc
 ```
 
 ## Tema
-Cuando usamos el parametros -L i \--list-themes, no muestra todos los temas que tenemos para usar con batcat, si queremos
+Cuando usamos el parametros **-L** o **\--list-themes**, no muestra todos los temas que tenemos para usar con batcat, si queremos
 modificarlo por uno que nos guste más lo que debemos hacer es lo siguiente **(Hay dos formas)**.
 ### Primera forma
 Esta primera forma modificamos el tema con el propio comando batcat.
