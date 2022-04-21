@@ -76,6 +76,7 @@ Podemos crearnos un pequeño script en bash, para identificar todos los equipos 
 
 ### PowerShell 
 De la misma forma que hemos hecho antes, tambien podemos hacerlo en powershell.
+
 ```PowerShell 
 #!/usr/bin/pwsh
 #Autor: Jose Conde
