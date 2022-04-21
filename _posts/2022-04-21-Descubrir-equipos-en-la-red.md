@@ -87,7 +87,7 @@ De la misma forma que hemos hecho antes, tambien podemos hacerlo en powershell.
     
     if ($status)
     {
-        Write-Host "[!] Equipo: 192.168.0.$_" -ForegroundColor Yellow -NoNewline; Write-Host " - Encendido"  -ForegroundColor Green
+        Write-Host "[!] Equipo: 192.168.0.$_ - Activo" -ForegroundColor Green
     }
 } -ThrottleLimit 100
 ```
