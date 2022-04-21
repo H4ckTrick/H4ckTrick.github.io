@@ -52,7 +52,7 @@ netdiscover -i eth0
 
 ### Nmap 
 Nmap, a parte de escanear puertos tambien nos permite identificar que dispositivos estan conectados a la red
-- -sn ➜ Deshabilitamos el modo escaneo de puerto y solo descubre equipos conectados
+- -sn ➜ Deshabilitamos el modo escaneo de puertos y solo descubre equipos conectados
 ```bash
 nmap -sn 192.168.0.0/24
 ```
