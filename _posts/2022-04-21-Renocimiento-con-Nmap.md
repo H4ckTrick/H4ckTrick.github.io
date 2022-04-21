@@ -53,19 +53,23 @@ sudo pacman -Sy nmap
 Vemos un primer ejemplo de evasión. 
 - **-ff** y **-mtu 16** es lo mismo
 - **ME** indica que es nuestro equipo quien hace el escaneo 
+
 ```bash
 nmap --top-port 100 --open --mtu 16 -D 192.168.20.10, 192.168.20.11, ME -sS -n -Pn 192.168.20.100
 ```
 #### Escaneo rápido para nuestro entorno 
+
 ```bash 
 nmap -p- --open --min-rate 5000 -n -Pn -sS 192.168.20.100
 ```
 #### Descubrir equipos de nuestra red
+
 ```bash 
 nmap -sn -PS 443 192.168.20.0/24
 ```
 #### Detectar servicios, versión ... 
 - -sCV ➜ Fusión de parámetros **-sC** y **-sV**
+
 ```bash 
 nmap -O -SCV 192.168.20.0/24
 ```
