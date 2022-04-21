@@ -35,10 +35,10 @@ brew install bat
 ### Párametros
 - **-l** ➜ Especificamos el lenguaje a utilizar
 - **\--list-themes** ➜ Vemos los temas disponibles 
-- **-L, \--list-languajes** -> Vemos los lenguajes disponibles a usar 
-- **-r, \--line-range** ➜ Indicamos un rango de lineas a mostrar
-- **-n, \--number** ➜ Muestra las lineas del fichero
-- **-A, \--show-all** ➜ Muestra todo los carazteres (Imprimibles, como no imprimibles)
+- **-L o \--list-languajes** ➜ Vemos los lenguajes disponibles a usar 
+- **-r o \--line-range** ➜ Indicamos un rango de lineas a mostrar
+- **-n o \--number** ➜ Muestra las lineas del fichero
+- **-A o \--show-all** ➜ Muestra todo los carazteres (Imprimibles, como no imprimibles)
 
 Si tenemos un script en ptyhon por ejemplo, podemos indicarle que el lenguaje que va a utilizar sea python, 
 aun que lo coge por defecto en algunas ocasiones, cuando lanzamos un curl por ejemplo no lo detecta.
@@ -70,6 +70,3 @@ En esta segunda forma, hacemos lo mismo pero cambiando una variable de entorno q
 ```bash
 export BAT_THEME="DarkNeon"
 ```
-
-
-
