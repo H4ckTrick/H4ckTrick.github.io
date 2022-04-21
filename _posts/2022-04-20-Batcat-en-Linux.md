@@ -20,13 +20,13 @@ sudo apt-get install -y batcat
 ### Párametros
 - -l 
 - --list-themes
-- -L o --list-languajes
-- -r o --line-range
-- -n o --number
-- -A o --show-all 
+- -L o \--list-languajes
+- -r o \--line-range
+- -n o \--number
+- -A o \--show-all 
 
-Si tenemos un script en ptyhon por ejemplo, podemos indicarle que el lenguaje que va a utilizar sea python, aun que lo coge por defecto en algunas ocasiones, 
-cuando lanzamos un curl por ejemplo no lo detecta.
+Si tenemos un script en ptyhon por ejemplo, podemos indicarle que el lenguaje que va a utilizar sea python, 
+aun que lo coge por defecto en algunas ocasiones, cuando lanzamos un curl por ejemplo no lo detecta.
 ```bash
 batcat -l python script.py
 ```
