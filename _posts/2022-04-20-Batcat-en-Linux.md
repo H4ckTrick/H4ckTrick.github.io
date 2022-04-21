@@ -4,9 +4,9 @@ author: Conde
 ---
 
 ## Indice
-- [Definición](### Definción)
-- [Instalación]()
-- [Parámetros]()
+- [Definición](#Definción)
+- [Instalación](#Instalación)
+- [Parámetros](#Párametros)
 
 ### Definción
 Batcat, es un comando que nos permite visualizar el contenido de los ficheros de una forma más comoda, ya que reconoce
