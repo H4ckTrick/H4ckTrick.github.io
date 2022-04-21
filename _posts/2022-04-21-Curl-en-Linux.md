@@ -8,7 +8,8 @@ author: Conde
 - [Instalación](#instalación)
 - [Parámetros](#párametros)
 - [Pentesting con curl](#pentesting)
-  - [Descubrimiento de directorios](#fuzzing)
+  - [Descubrimiento de directorios y archivos](#fuzzing)
+  - [Descubrimiento de subdominios](#subdominios)
 
 
 ### Definción
@@ -121,7 +122,7 @@ helpPanel(){
 [[ $# -eq 0 ]] && helpPanel || fuzz
 ```
 #### Subdominios
-Ahora con otro script muy sencillo vamos a descubrir subdominios
+Ahora con otro script muy sencillo vamos a descubrir subdominios de un dominio que le indiquemos por parametro.
 ```bash 
 #!/bin/bash
 #Autor: Jose Conde
@@ -153,7 +154,3 @@ else
     echo -e "Uso $0 <domain> <dicionario>"
 fi
 ```
-
-
-
-
