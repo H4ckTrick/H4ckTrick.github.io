@@ -39,7 +39,7 @@ brew install bat
 - **-L o \--list-languajes** ➜ Vemos los lenguajes disponibles a usar 
 - **-r o \--line-range** ➜ Indicamos un rango de lineas a mostrar
 - **-n o \--number** ➜ Muestra las lineas del fichero
-- **-A o \--show-all** ➜ Muestra todo los carazteres (Imprimibles, como no imprimibles)
+- **-A o \--show-all** ➜ Muestra todo los caracteres (Imprimibles, como no imprimibles)
 
 #### Ejemplos
 Indicar lenguaje a utilizar
@@ -94,7 +94,7 @@ export BAT_THEME="DarkNeon"
 ```
 ### Errores
 Cuando intentamos instalar **bat** en nuestro sistemas nos puede dar diferentes errores.
-- Error de dependencias ➜ Actualizar reposirios
+- Error de dependencias ➜ Actualizar repositorios
 - Error de paquete no encontrado ➜ En algunas versiones no es bat, es batcat 
 
 Personalmente en Kali, Parrot siempre he usado **batcat**, ahora que uso arch es **bat**. 
