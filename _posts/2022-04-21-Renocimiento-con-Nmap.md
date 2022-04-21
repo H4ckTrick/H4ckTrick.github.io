@@ -48,6 +48,7 @@ sudo pacman -Sy nmap
 - -v ➜ Verbose
 
 ###  Uso 
+
 #### Evasión de Firewall, IDS ... 
 Vemos un primer ejemplo de evasión. 
 - **-ff** y **-mtu 16** es lo mismo
