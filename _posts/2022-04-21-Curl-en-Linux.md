@@ -37,15 +37,15 @@ brew install curl
 - **-s o \--silent** ➜ Modo silencioso
 - **-X o \--request** ➜ Nos permite realizar peticiones (Post y Get)
 - **-L o \--location** ➜ Aplica redirección 
-- **-w o \--write-out** ➜ Indicamos contenido a ver, por ejemplo mostrar el codigo de estado (-w "%{http_code}\n")
+- **-w o \--write-out** ➜ Indicamos contenido a ver (E.j -w "%{http_code}\n")
 - **-K o \--insecure** ➜ No aplicamos certificado SSL 
 - **-I o \--head** ➜ Vemos las cabezeras enviadas
 - **-d o \--data** ➜ Nos permite enviar data a una dirección
 - **-T o \--upload-file** ➜ Permite subir un archivo, por ejemplo a FTP
-- **-o o \--output** ➜ Permite almacenar el output en un fichero, se puede redirigir al /dev/null, tambien se puede usar -O o el signo mayor '>'
+- **-o o \--output** ➜ Permite almacenar el output
 - **-H o \--header** ➜ Permite enviar una cabezera personalizada
-- **-U o \--user** ➜ Indicamos el usuario y contraseña (Por ejemplo si tenemos que loguearnos en FTP)
-- **-A o \--user-agent** ➜ Permite modificar el User-Agent (Información sobre el navegador que usamos)
+- **-U o \--user** ➜ Indicamos el usuario y contraseña 
+- **-A o \--user-agent** ➜ Permite modificar el User-Agent 
 - **-x o \--proxy** ➜ Permite indicar la dirección de un proxy, para que el realize la petición 
 
 #### Ejemplos
@@ -55,7 +55,7 @@ curl -L -s -w "%{http_code}\n" -o /dev/null http://h4cktrick.github.io
 ```
 Ver cabezeras enviadas 
 ```bash
-curl -I -L -s http://h4cktrick.github.io -o /dev/null
+curl -I -L -s http://h4cktrick.github.io
 ```
 Subir archivo a ftp anonimo
 ```bash
@@ -63,7 +63,7 @@ curl -s -T "secret.txt" ftp://127.0.0.1 --user anonymous:null
 ```
 Descargar un archivo 
 ```bash
-curl -O /dev/null http://h4cktrick.github.io/script.py
+curl -O https://h4cktrick.github.io/script.py
 ```
 
 ### Pentesting
