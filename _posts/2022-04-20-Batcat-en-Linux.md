@@ -3,12 +3,13 @@ layout: post
 author: Conde
 ---
 
-## Indice
+## Índice
 - [Definición](#definción)
 - [Instalación](#instalación)
 - [Parámetros](#párametros)
 - [Alias](#alias)
 - [Cambiar el tema](#tema)
+- [Posibles errores](#errores)
 
 ### Definción
 Batcat, es un comando que nos permite visualizar el contenido de los ficheros de una forma más comoda, ya que reconoce
@@ -40,11 +41,32 @@ brew install bat
 - **-n o \--number** ➜ Muestra las lineas del fichero
 - **-A o \--show-all** ➜ Muestra todo los carazteres (Imprimibles, como no imprimibles)
 
-Si tenemos un script en ptyhon por ejemplo, podemos indicarle que el lenguaje que va a utilizar sea python, 
-aun que lo coge por defecto en algunas ocasiones, cuando lanzamos un curl por ejemplo no lo detecta.
+#### Ejemplos
+Indicar lenguaje a utilizar
 ```bash
-batcat -l python script.py
+bat -l python script.py
 ```
+Mostrar temas disponibles
+```bash
+bat --list-themes
+```
+Ver lenguajes disponibles
+```bash
+bat --list-languajes
+```
+Mostrar un rango de lineas 
+```bash
+bat -r 5:10 /etc/passwd
+```
+Mostrar número de linea 
+```bash
+bat -n /etc/passwd
+```
+Mostrar todos los carazteres 
+```bash
+bat -A /etc/passwd
+```
+
 ### Alias
 Como este comando es mucho mejor que cat, en mi opinión, lo que haremos en un alias permanente, 
 para ello en nuestro fichero **~/.bashrc** o **~/.zshrc** agregamos el siguiente comando.
@@ -57,16 +79,22 @@ con el fichero de tu shell correspondiente.
 source ~/.zshrc
 ```
 
-## Tema
+### Tema
 Cuando usamos el parametros **-L** o **\--list-themes**, no muestra todos los temas que tenemos para usar con batcat, si queremos
 modificarlo por uno que nos guste más lo que debemos hacer es lo siguiente **(Hay dos formas)**.
-### Primera forma
+#### Primera forma
 Esta primera forma modificamos el tema con el propio comando batcat.
 ```bash
 bat --theme=DarkNeon
 ```
-### Segunda forma
+#### Segunda forma
 En esta segunda forma, hacemos lo mismo pero cambiando una variable de entorno que usa batcat.
 ```bash
 export BAT_THEME="DarkNeon"
 ```
+### Errores
+Cuando intentamos instalar **bat** en nuestro sistemas nos puede dar diferentes errores.
+- Error de dependencias ➜ Actualizar reposirios
+- Error de paquete no encontrado ➜ En algunas versiones no es bat, es batcat 
+
+Personalmente en Kali, Parrot siempre he usado **batcat**, ahora que uso arch es **bat**. 
