@@ -14,8 +14,7 @@ Batcat, es un comando que nos permite visualizar el contenido de los ficheros de
 la sintaxis.
 
 ### Instalación 
-Instalación
 ```bash
-   sudo apt-get install -y batcat 
+sudo apt-get install -y batcat
 ```
 
