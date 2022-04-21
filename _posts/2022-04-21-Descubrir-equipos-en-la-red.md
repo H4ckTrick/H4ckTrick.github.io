@@ -24,7 +24,7 @@ cat /sys/class/net
 #### Nmcli
 Enumeración a tráves de la herramienta nmcli.
 - -t ➜ Oculta el nombre del campo seleccionado.
-- -f ➜ Campo a mostrar (Device, Type,State, Connection).
+- -f ➜ Campo a mostrar (Device, Type, State, Connection).
 - c ➜ Abreviautra de connection.
 - s ➜ Abreviautra de show.
 - \--active ➜ Tarjetas en estado activo.
