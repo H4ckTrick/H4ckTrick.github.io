@@ -23,29 +23,29 @@ sudo pacman -Sy nmap
 ```
 
 ### Parametros
-- -sT ➜ Escaneo TCP
-- -sU ➜ Escaneo UDP
-- -sY ➜ Escaneo SCTP
-- -sS ➜ Escaneo TCP/SYN
-- -sn ➜ Solo hace descrubrimiento de red
-- -Pn ➜ Deshablita la resolución ARP
-- -n ➜ Quita la resolción DNS
-- -PS ➜ Envia un paquete TCP SYN a un puerto (Por defecto el 80)
-- \--top-port ➜ Escaneo los top ports 
-- \--open ➜ Solo muestra puertos abiertos
-- -f ➜ Fragmenta las cabezeras (Bypass Firewall)
-- -mtu ➜ Fragmenta las cabezeras igual ()
-- -D ➜ Permite falsificar la ip que hace el escaneo 
-- -S ➜ Falsificación de 
-- \--source-port ➜ Falsificar el puerto que envia el paquete
-- \--min-rate ➜ Permite indicar la velocidad de los paquetes
-- -T ➜ Permite modificar la plantilla de temporizado 
-- -sV ➜ Detención de versión de lo servicios
-- -sC ➜ Uso de script básicos de nmap 
-- -O ➜ Detención de S.O 
-- -p ➜ Indicamos el puerto a escaneo (- indica todos)
-- -oX, oG, oN ➜ Guardamos el resultado del comando
-- -v ➜ Verbose
+- **-sT** ➜ Escaneo TCP
+- **-sU** ➜ Escaneo UDP
+- **-sY** ➜ Escaneo SCTP
+- **-sS** ➜ Escaneo TCP/SYN
+- **-sn** ➜ Solo hace descrubrimiento de red
+- **-Pn** ➜ Deshablita la resolución ARP
+- **-n** ➜ Quita la resolción DNS
+- **-PS** ➜ Envia un paquete TCP SYN a un puerto (Por defecto el 80)
+- **\--top-port** ➜ Escaneo los top ports 
+- **\--open** ➜ Solo muestra puertos abiertos
+- **-f** ➜ Fragmenta las cabezeras (Bypass Firewall)
+- **-mtu** ➜ Fragmenta las cabezeras igual ()
+- **-D** ➜ Permite falsificar la ip que hace el escaneo 
+- **-S** ➜ Falsificación de 
+- **\--source-port** ➜ Falsificar el puerto que envia el paquete
+- **\--min-rate** ➜ Permite indicar la velocidad de los paquetes
+- **-T** ➜ Permite modificar la plantilla de temporizado 
+- **-sV** ➜ Detención de versión de lo servicios
+- **-sC** ➜ Uso de script básicos de nmap 
+- **-O** ➜ Detención de S.O 
+- **-p** ➜ Indicamos el puerto a escaneo (- indica todos)
+- **-oX, oG, oN** ➜ Guardamos el resultado del comando
+- **-v** ➜ Verbose
 
 ###  Uso 
 
