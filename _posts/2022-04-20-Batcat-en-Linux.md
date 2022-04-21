@@ -61,12 +61,12 @@ source ~/.zshrc
 Cuando usamos el parametros -L i \--list-themes, no muestra todos los temas que tenemos para usar con batcat, si queremos
 modificarlo por uno que nos guste más lo que debemos hacer es lo siguiente **(Hay dos formas)**.
 ### Primera forma
-Esta primera forma modificamos el tema con el propio comando batcat
+Esta primera forma modificamos el tema con el propio comando batcat.
 ```bash
 bat --theme=DarkNeon
 ```
 ### Segunda forma
-En esta segunda forma, hacemos lo mismo pero cambiando una variable de entorno que usa batcat
+En esta segunda forma, hacemos lo mismo pero cambiando una variable de entorno que usa batcat.
 ```bash
 export BAT_THEME="DarkNeon"
 ```
