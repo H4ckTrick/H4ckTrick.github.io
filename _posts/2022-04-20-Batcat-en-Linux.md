@@ -14,12 +14,26 @@ Batcat, es un comando que nos permite visualizar el contenido de los ficheros de
 la sintaxis.
 
 ### Instalación 
+En Debian, Ubuntu y derivadas
 ```bash
-sudo apt-get install -y batcat
+sudo apt-get install -y bat
 ```
+En CentOS, RHEL y derivadas
+```bash
+sudo yum install -y bat
+```
+En Arch y derivdas
+```bash
+sudo pacman -Sy bat
+```
+En Mac OS
+```bash
+brew install bat
+```
+
 ### Párametros
 - -l 
-- --list-themes
+- \--list-themes
 - -L o \--list-languajes
 - -r o \--line-range
 - -n o \--number
