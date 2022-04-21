@@ -8,8 +8,8 @@ author: Conde
 - [Instalación](#instalación)
 - [Parámetros](#párametros)
 - [Pentesting con curl](#pentesting)
-  - [Descubrimiento de directorios](# Descrubrimiento de directorios)
-  - 
+  - [Descubrimiento de directorios](# descrubrimiento de directorios )
+
 
 ### Definción
 Curl, es un comando que nos permite realizar peticiones a páginas web, subir o descargar archivos tantos de servidores
