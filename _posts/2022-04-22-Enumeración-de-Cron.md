@@ -15,5 +15,5 @@ author: Conde
 ### Explicación 
 
 <p align="center"> 
-<img src="https://ibb.co/jWbn6tr">
+<img src="https://github.com/H4ckTrick/H4ckTrick.github.io/blob/main/_posts/_images/cron.png">
 </p>
