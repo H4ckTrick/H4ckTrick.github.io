@@ -3,5 +3,6 @@ title: About
 layout: page
 ---
 
-Hola a tod@s, soy Jose, un pequeño fanático por la informática, concretamente con la administración de sistemas y el hacking etico. En esta 
-página subire mis pequeños apuntes sobre informatica. 
+Bienvenido! Soy Jose, un loco por la informática, soy administrador de sistemas (sysadmin), pero me encanta el pentesting, 
+espero que me más adelante, pueda llevar mi mayor pasión a un posible puesto laboral. En esta página subire mis pequeños apuntes sobre
+hacking, certificaciones, tips, etc. 
