@@ -39,7 +39,7 @@ Enumeración a tráves del comando ip.
 - **-br** ➜ brief
 
 ```bash
-ip -c a | awk '{print $1}'
+ip -c -br a | awk '{print $1}'
 ```
 #### Ifconfig
 Enumeración a tráves del comando ifconfig.
