@@ -29,7 +29,7 @@ crontab -e
 ```
 Dentro de ese fichero, podemos configurarlo dependiendo de cuando queremos que se ejecuten
 las tareas.
-[alt]("https://github.com/H4ckTrick/H4ckTrick.github.io/blob/main/_posts/_images/cron.png")
+![CronJobs](https://github.com/H4ckTrick/H4ckTrick.github.io/blob/main/_posts/_images/cron.png)
 
 <p align="center"> 
   <img src="https://github.com/H4ckTrick/H4ckTrick.github.io/blob/main/_posts/_images/cron.png">
