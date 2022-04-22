@@ -83,6 +83,8 @@ Verde="\e[32m"
 Rojo="\e[91m"
 
 #Exit ctrl + c 
+trap ctrl_c INT
+
 ctrl_c(){
 	clear
 	echo -e "${Amarillo}[-]${Rojo} Saliendo... ${Normal}"
@@ -134,6 +136,8 @@ Verde="\e[32m"
 Rojo="\e[91m"
 
 #Exit ctrl + c 
+trap ctrl_c INT
+
 ctrl_c(){
 	clear
 	echo -e "${Amarillo}[-]${Rojo} Saliendo... ${Normal}"
