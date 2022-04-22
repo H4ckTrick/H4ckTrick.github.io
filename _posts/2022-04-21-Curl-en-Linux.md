@@ -25,7 +25,7 @@ En CentOS, RHEL y derivadas
 ```bash
 sudo yum install -y curl
 ```
-En Arch y derivdas
+En Arch y derivadas
 ```bash
 sudo pacman -Sy curl
 ```
