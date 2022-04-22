@@ -24,7 +24,7 @@ En CentOS, RHEL y derivadas
 ```bash
 sudo yum install -y bat
 ```
-En Arch y derivdas
+En Arch y derivadas
 ```bash
 sudo pacman -Sy bat
 ```
