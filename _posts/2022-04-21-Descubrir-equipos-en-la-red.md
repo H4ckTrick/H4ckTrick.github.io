@@ -34,11 +34,12 @@ nmcli -t -f DEVICE c s --active
 ```
 #### Ip 
 Enumeración a tráves del comando ip.
-- -c ➜ Formato colorizado.
-- a ➜ Abreviatura de addr.
+- **-c** ➜ Formato colorizado.
+- **a** ➜ Abreviatura de addr.
+- **-br** ➜ brief
 
 ```bash
-ip -c a 
+ip -c a | awk '{print $1}'
 ```
 #### Ifconfig
 Enumeración a tráves del comando ifconfig.
