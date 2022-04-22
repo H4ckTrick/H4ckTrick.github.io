@@ -49,7 +49,7 @@ sudo pacman -Sy nmap
 
 ###  Uso 
 
-#### Evasión de Firewall, IDS ... 
+#### Evasión de Firewall e IDS
 Vemos un primer ejemplo de evasión. 
 - **-ff** y **-mtu 16** es lo mismo
 - **ME** indica que es nuestro equipo quien hace el escaneo 
@@ -72,4 +72,14 @@ nmap -sn -PS 443 192.168.20.0/24
 
 ```bash 
 nmap -O -SCV 192.168.20.0/24
+```
+
+#### Fuerza bruta a ssh 
+- **\--script** ➜ Lanza un script propio de nmap
+-  **\--script-args** ➜ Indica los argumentos del script
+- **userdb** ➜ Se indica el diccionario de usuarios
+- **passdb** ➜ Se indica el diccionario de contraseñas
+
+```bash 
+nmap 192.168.20.102 -p22 --script ssh-brute --script-args userdb=usuarios.txt,passdb=pass.txt
 ```
