@@ -7,6 +7,7 @@ author: Conde
 - [Instalación](#instalación)
 - [Parametros](#parametros)
 - [Uso de NMAP](#uso)
+- [Parsear información](#filtrar)
 
 ### Instalación
 En Debian, Ubuntu y derivadas
@@ -82,4 +83,22 @@ nmap -O -SCV 192.168.20.0/24
 
 ```bash 
 nmap 192.168.20.102 -p22 --script ssh-brute --script-args userdb=usuarios.txt,passdb=pass.txt
+```
+
+### Filtrar
+Una vez que exportamos la evidendia a algun formato (-oG, -oN, etc), yo trabajo con -oG, lo que vamos
+a hacer es parsear la información más interesante, veamos algún ejemplo.
+
+#### Exportar IPs a un fichero 
+Imaginamos que hacemos el siguiente escaneo y nos devuelve muchas IP, si queremos hacer un escaneo a todas 
+copiarlas una a una es muy lento, podemos hacer lo siguiente.
+
+```bash 
+nmap -sn -PS 192.168.20.0/24 -oG UpHost
+```
+
+Ahora vamos a sacar todas las IPs, ignornando la dirección de red, y sacando el resto 
+
+```bash 
+cat UpHost | sed 's/^#.*//g' | grep -oP "(\d{1,3}\.){3}\d{1,3}" > HostActivos
 ```
