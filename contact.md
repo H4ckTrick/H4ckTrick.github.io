@@ -3,6 +3,11 @@ title: Contact
 layout: page
 ---
 
-linkedin [linkedin](https://www.linkedin.com/in/jose-conde-garcia/).
+En esta sección encontraras mis redes sociales, para que puedas contactar conmigo, si tienes algun
+duda. Encantado te ayudaré.
 
-Instagram [Instagram](https://www.instagram.com/rinconh4ck/).
+- linkedin [linkedin](https://www.linkedin.com/in/jose-conde-garcia/)
+- Instagram [Instagram](https://www.instagram.com/rinconh4ck/)
+- Mi blog [Blog](https://rinconh4ck.blogspot.com/)
+
+
