@@ -14,4 +14,6 @@ author: Conde
 
 ### Explicación 
 
-![alt cron](https://ibb.co/jWbn6tr)
+<p align="center"> 
+<img src="https://ibb.co/jWbn6tr">
+</p>
