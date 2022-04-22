@@ -17,7 +17,7 @@ configurado correctamente la hora (NTP).
 ### Explicación 
 Dependiendo de la distribución cron se inicia en algun directorio de los siguientes: 
 - **/etc/rc.d**
-- **/etc/inid.d** 
+- **/etc/init.d** 
 
 Una vez que este es arrancado comprueba constantemente los ficheros de las siguientes rutas: 
 - **/etc/crontab**
