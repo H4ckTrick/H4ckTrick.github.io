@@ -47,13 +47,14 @@ Otra forma, viendo el contenido del fichero crontab
 ```bash
 cat /etc/crontab 
 ```
-Dentro de la ruta */var/spool/cron/crontabs/* podemos encontrar una lista de crontabs. 
+Dentro de la ruta */var/spool/cron/crontabs/* podemos encontrar una lista de crontabs de los usuarios
+que tienen tareas. 
 
 ```bash
 ls -l /var/spool/cron/crontabs/
 ```
 
-Una vez que visualizamos los existentes, podemos verlo. 
+Una vez que visualizamos los existentes, podemos visualizar el de nuestro objetivo. 
 
 ```bash
 cat /var/spool/cron/crontabs/root
