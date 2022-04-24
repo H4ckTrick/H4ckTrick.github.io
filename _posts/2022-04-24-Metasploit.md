@@ -98,11 +98,11 @@ Ahora veremos un ejemplo de uso de metasploit, para realizar un escaneo de puert
 ```bash
 msfconsole
 ```
-2. Buscamos el exploit relacionado 
+2. Buscamos el exploit de escaneo de puertos
 ```bash
 search portscan 
 ```
-3. Usamos el exploit que escogamos 
+3. Usamos el exploit que escojamos 
 ```bash
 use /auxiliary/scanner/portscan/tcp 
 ```
