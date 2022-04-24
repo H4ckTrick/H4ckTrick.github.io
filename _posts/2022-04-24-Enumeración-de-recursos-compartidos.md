@@ -47,6 +47,13 @@ Podemos comenzar haciendo una emueración de los recursos, con una sessión null
 smbclient -L 192.168.10.123 -N 
 ```
 
+Tambien podemos usar protocolo NT1 si fuera necesario. 
+- **\--option** ➜ Especificamos un opción para smb 
+
+```bash
+smbclient -L 192.168.10.123 -N --option='client min protocol=NT1'
+```
+
 #### Smbmap 
 Tambien podemos usar esta herramienta, que ya es escpecializada en la enumeración de SMB.
 - **-H** ➜ IP de objetivo
