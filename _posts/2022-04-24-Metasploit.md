@@ -28,8 +28,10 @@ Antes de utilizarlo, es importante tener unos conceptos claros, estos son:
 - **Meterpreter** ➜ Este concepto sale mucho en metasploit, este es un tipo de payload que te otorga un shell super potente.
 
 Dentro de metasploit hay una serie de directorios importantes que son: 
-- **El directorio principal (En Kali, Parrot)** ➜ /usr/share/metasploit-framework 
-- **El directorio principal (En Arch)** ➜ /opt/metasploit
+- **El directorio principal (En Kali, Parrot)** 
+  - */usr/share/metasploit-framework* 
+- **El directorio principal (En Arch)** 
+  - */opt/metasploit*
 
 Dentro del podemos encontrar un directorio muy importante 
 - **/opt/metasploit/modules** ➜ Aqui se encuentra los payloads.
