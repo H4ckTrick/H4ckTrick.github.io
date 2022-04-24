@@ -32,6 +32,11 @@ puertos proximos:
 - Puerto 137, 138 (UDP) 
 - Puerto 137 (TCP) 
 
+A mayores samba, a parte de compartir recursos en red, nos permite crear un controlador de dominio simulando AD DC. 
+- Samba 3 ➜ Antes de la salida de samba-ad-dc (samba4) se utilizaba junto LDAP, para crear un dominio y podemos unir clientes windows y Linux 
+- Samba 4 ➜ Con la salida de samba4, samba3 dejo de ser utilizado, samba4 tiene mucha potencia similar a AD, por lo que nos permite realizar todo, unir clientes windows y linux, uso de GPOS, relaciones de confianza, etc. 
+
+
 ### Enumeración 
 #### Smbclient
 Podemos comenzar haciendo una emueración de los recursos, con una sessión null con smbclient, de la siguiente forma.
@@ -43,7 +48,7 @@ smbclient -L 192.168.10.123 -N
 ```
 
 #### Smbmap 
-La igual que hicimos antes, podemos usar esta herramienta.
+Tambien podemos usar esta herramienta, que ya es escpecializada en la enumeración de SMB.
 - **-H** ➜ IP de objetivo
 - **-u** ➜ Usuario (% usuario actual del sistema)
 
