@@ -10,8 +10,8 @@ author: Conde
   - [Instalación](#instalación)
   - [Parámetros](#parametros)
   - [Msfvenom](#msfvenom)
-  - [Ejemplos de uso](#ejemplos)
-  - [GUI - Armitage](#armitage)
+  - [Ejemplo de uso](#ejemplo)
+  - [Armitage](#armitage)
     - [Instalación](#instalación)
 
 ### Definición
