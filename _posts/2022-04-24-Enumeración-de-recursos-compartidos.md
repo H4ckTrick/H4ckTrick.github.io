@@ -77,6 +77,7 @@ enum4linux -S -u -p 192.168.10.123
 - -u ➜ Usuarios
 - -p ➜ Contraseña 
 - \--shares ➜ Enumerar recursos
+
 ```bash
 crackmapexec smb 192.168.10.123 -u '' -p '' --shares
 ```
