@@ -38,7 +38,7 @@ Dentro del podemos encontrar un directorio muy importante
 - **/opt/metasploit/modules/payloads** ➜ Aqui dentro tenemos tres directorios super importantes.
 
 Los tres directorios importantes son: 
-- **/opt/metasploit/modules/payloads/singles** ➜ Este es un payload autocontenidos, esto quiere decir que hace lo que indica (Crea usuarios, shell, etc).
+- **/opt/metasploit/modules/payloads/singles** ➜ Estes son payloads autocontenidos, esto quiere decir que hace lo que indica (Crea usuarios, shell, etc).
 - **/opt/metasploit/modules/payloads/stagers** ➜ Este tipo de payload necesita un stages para funcionar (Estos establecen la conexión).
 - **/opt/metasploit/modules/payloads/stages** ➜ Este se deposita cuando el stagers realizan la conexión, y este realiza acciones más avanzadas, el más conocido es meterpreter. 
 
