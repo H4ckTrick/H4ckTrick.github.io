@@ -123,6 +123,24 @@ helpPanel(){
 #Arguments
 [[ $# -eq 0 ]] && helpPanel || fuzz
 ```
+Tambien podemos hacer lo mismo con python3, como podemos ver en el siguiente ejemplo: 
+```python
+#!/usr/bin/python3
+#Autor: Jose Conde 
+
+#Variables
+url = 'http://localhost/'
+diccionario = open('fuzz.txt', 'r')
+
+print("[*] Directorios encontrados: ")
+for dir in diccionario.readlines():
+	directory = dir.rstrip('\n')
+	code = requests.get(url+directory)
+	
+	if code.status_code == 200: 
+		print("\t[!] %s" % directory)
+```
+
 #### Subdominios
 Ahora con otro script muy sencillo vamos a descubrir subdominios de un dominio que le indiquemos por parametro.
 ```bash 
