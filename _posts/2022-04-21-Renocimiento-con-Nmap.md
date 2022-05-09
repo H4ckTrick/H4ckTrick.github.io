@@ -37,7 +37,7 @@ sudo pacman -Sy nmap
 - **-f** ➜ Fragmenta las cabezeras (Bypass Firewall)
 - **-mtu** ➜ Fragmenta las cabezeras igual ()
 - **-D** ➜ Permite falsificar la ip que hace el escaneo 
-- **-S** ➜ Falsificación de 
+- **-S** ➜ Falsificación de ip, debe ir acompañada de -Pn y -e 
 - **\--source-port** ➜ Falsificar el puerto que envia el paquete
 - **\--min-rate** ➜ Permite indicar la velocidad de los paquetes
 - **-T** ➜ Permite modificar la plantilla de temporizado 
