@@ -6,7 +6,7 @@ author: Conde
 ## Índice
 - [Definición](#definción)
 - [Conceptos](#conceptos)
-- [Uso de metasploit](#uso)
+- [Uso de metasploit](#uso-de-metasploit)
   - [Instalación](#instalación)
   - [Parámetros](#parametros)
   - [Msfvenom](#msfvenom)
@@ -42,7 +42,7 @@ Los tres directorios importantes son:
 - **/opt/metasploit/modules/payloads/stagers** ➜ Este tipo de payload necesita un stages para funcionar (Estos establecen la conexión).
 - **/opt/metasploit/modules/payloads/stages** ➜ Este se deposita cuando el stagers realizan la conexión, y este realiza acciones más avanzadas, el más conocido es meterpreter. 
 
-### Uso 
+### Uso de Metasploit
 #### Instalación 
 Para instalar metasploit solo es necesario ejecutar el siguiente comando: 
 
