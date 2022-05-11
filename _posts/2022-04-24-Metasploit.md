@@ -17,7 +17,7 @@ author: Conde
 ### Definición
 Metasploit es un proyecto de **código abierto** para la seguridad informática, que proporciona información acerca de vulnerabilidades de seguridad
 y ayuda en **Pentesting**. Para usar esta herramienta no necesitas tener conocimientos de lo que hace, ya que te lo dan **todo automatizado**, de 
-forma que solo hay que hacer unos pequeños ajustes. En mi opinión no me gust utilizarlo, pero un hacker, debe saber utilizar todas las herramientas 
+forma que solo hay que hacer unos pequeños ajustes. En mi opinión no me gusta utilizarlo, pero un hacker, debe saber utilizar todas las herramientas 
 posibles, por si algún día le es necesario. 
 
 ### Conceptos 
