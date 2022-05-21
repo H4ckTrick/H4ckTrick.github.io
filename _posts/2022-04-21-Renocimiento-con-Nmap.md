@@ -35,7 +35,9 @@ sudo pacman -Sy nmap
 - **\--top-port** ➜ Escaneo los top ports 
 - **\--open** ➜ Solo muestra puertos abiertos
 - **-f** ➜ Fragmenta las cabezeras (Bypass Firewall)
-- **-mtu** ➜ Fragmenta las cabezeras igual ()
+- **\--mtu** ➜ Fragmenta las cabezeras igual que -f
+- **\--scan-delay** ➜ Permite agregar un retraso en los paquetes
+- **\--badsum** ➜ Genera una suma de verficación no válida
 - **-D** ➜ Permite falsificar la ip que hace el escaneo 
 - **-S** ➜ Falsificación de ip, debe ir acompañada de -Pn y -e 
 - **\--source-port** ➜ Falsificar el puerto que envia el paquete
