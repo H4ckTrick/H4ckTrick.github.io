@@ -39,7 +39,7 @@ A mayores samba, a parte de compartir recursos en red, nos permite crear un cont
 
 ### Enumeración 
 #### Smbclient
-Podemos comenzar haciendo una emueración de los recursos, con una sessión null con smbclient, de la siguiente forma.
+Podemos comenzar haciendo una enumeración de los recursos, con una sessión null con smbclient, de la siguiente forma.
 - **-L** ➜ Lista los recursos
 - **-N** ➜ Omite contraseña 
 
@@ -55,7 +55,7 @@ smbclient -L 192.168.10.123 -N --option='client min protocol=NT1'
 ```
 
 #### Smbmap 
-Tambien podemos usar esta herramienta, que ya es escpecializada en la enumeración de SMB.
+Tambien podemos usar esta herramienta, que ya es especializada en la enumeración de SMB.
 - **-H** ➜ IP de objetivo
 - **-u** ➜ Usuario (% usuario actual del sistema)
 
