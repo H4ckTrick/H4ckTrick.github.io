@@ -9,7 +9,7 @@ author: Conde
   - [Profundización en -type y -size](#-Type-y--Size)
 - [Ejemplos de uso](#ejemplos-de-uso)
 
-### Definión 
+### Definición 
 Find, es un comando que nos permite realizar búsquedas de ficheros, directorios, enlaces y demás de una forma rápida. Este comando es muy potente, ya que nos permite realizar acciones sobre salidas de ficheros buscados, eliminar directorios vacios, patrones de busqueda, etc. 
 
 ### Parámetros 
