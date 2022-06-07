@@ -58,12 +58,12 @@ Buscar permisos SUID en el sistema, redirigimos el STDERR al /dev/null, para que
 find / -perm /4000 2>/dev/null
 ```
 
-Buscar ficheros txt con propietario y grupo  
+Buscar ficheros txt con propietario y grupo.
 ```bash
 find / -iname "*.txt" -user conde -group web 2>/dev/null
 ```
 
-Eliminar todos los script de bash de nuestra carpeta actual
+Eliminar todos los script de bash de nuestra carpeta actual.
 ```bash
 find . -iname "*.sh" -type f -exec rm {} \;
 ```
@@ -73,7 +73,7 @@ Buscar archivos modificamos este ultimo día.
 find / -mtime -1
 ```
 
-Buscar archivos modificamos el los utlimos 5 minutos 
+Buscar archivos modificamos el los utlimos 5 minutos.
 ```bash
 find / -mmin -300
 ```
