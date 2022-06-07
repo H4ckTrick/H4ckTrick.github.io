@@ -67,6 +67,16 @@ Descargar un archivo
 curl -O https://h4cktrick.github.io/script.py
 ```
 
+Enviar una header 
+```bash
+curl -s https://h4cktrick.github.io/ -H "referer: google.es"
+```
+
+Ver resupuesta de curl de forma más legible
+```bash
+curl -s -L http://natas5.natas.labs.overthewire.org/ -u natas5:xxx -H "Cookie: loggedin=1" | htmlq -p | batcat -l html
+```
+
 ### Pentesting
 Ahora veremos pequeños scripts con curl, desarollados por mi, para realizar pentesting básico. 
 #### Fuzzing
