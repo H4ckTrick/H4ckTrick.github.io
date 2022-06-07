@@ -6,7 +6,9 @@ author: Conde
 ## Índice
 - [Definición](#definción)
 - [Parámetros](#parámetros)
--- [Profundización en dos parametros](#-Type-y--Size)
+  - [Profundización en dos parametros](#-Type-y--Size)
+- [Ejemplos de uso](#ejemplos-de-uso)
+- 
 
 
 ### Definión 
