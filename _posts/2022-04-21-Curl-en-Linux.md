@@ -72,7 +72,7 @@ Enviar una header
 curl -s https://h4cktrick.github.io/ -H "referer: google.es"
 ```
 
-Ver resupuesta de curl de forma más legible
+Output más legible y colorizado
 ```bash
 curl -s -L http://natas5.natas.labs.overthewire.org/ -u natas5:xxx -H "Cookie: loggedin=1" | htmlq -p | batcat -l html
 ```
