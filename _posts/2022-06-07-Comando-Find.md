@@ -28,9 +28,9 @@ Find, es un comando que nos permite realizar búsquedas de ficheros, directorios
 - -perm → Permisos que debe tener el recurso
 - -and, -a y -not, -or →
 
-#### Tablas
+#### -Type y -Size
 Dentro del parámetro -type, podemos encontrar los siguientes tipos. 
-| Tipo | Letra |
+| Tipo | Letra |         
 | --- | --- | 
 | b | Bloque | 
 | c | Carácter especial | 
@@ -40,6 +40,16 @@ Dentro del parámetro -type, podemos encontrar los siguientes tipos.
 | s | Socket |
 | D | Door (Solaris) |
 | p | FIFO |
+
+Dentro del -size tambien podemos encontrar los siguientes tipos. 
+| Tipo | Letra |         
+| --- | --- | 
+| b | 512-byte | 
+| c | Bytes | 
+| w | two-byte |
+| k | KiB |
+| M | MiB |
+| G | GiB |
 
 
 
