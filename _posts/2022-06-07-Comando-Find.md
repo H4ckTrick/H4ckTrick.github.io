@@ -6,7 +6,7 @@ author: Conde
 ## Índice
 - [Definción](#definción)
 - [Parámetros](#parámetros)
-  - [Profundización en -type y -size](#-Type-y--Size)
+  - [Profundización en -type y -size](#Type-y-Size)
 - [Ejemplos de uso](#ejemplos-de-uso)
 
 ### Definción 
@@ -28,7 +28,7 @@ Find, es un comando que nos permite realizar búsquedas de ficheros, directorios
 - **-perm** → Permisos que debe tener el recurso
 - **-and**, **-a** y **-not**, **-or** → Operadores and y or 
 
-#### -Type y -Size
+#### Type y Size
 Dentro del parámetro **-type**, podemos encontrar los siguientes tipos. 
 -  b → Bloque 
 -  c → Carácter especial  
