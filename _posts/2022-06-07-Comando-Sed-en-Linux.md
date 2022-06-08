@@ -35,7 +35,7 @@ cat file.txt | sed "/^$/d"
 
 Agregar una linea en el numero 11 (La linea debe existir). 
 ```bash
-sed -i '11i\I'm Conde\' file.txt
+sed -i '11i\Hello Conde\' file.txt
 ```
 
 Cambiar un patron por una variable de bash. 
