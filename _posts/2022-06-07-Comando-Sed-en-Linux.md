@@ -47,3 +47,13 @@ Si queremos que solo cambie la primera ocurrencia, y no todos los *usuario*, ind
 ```bash
 sed -i "s/usuario/$user/1" file.txt
 ```
+
+Ver las lineas que coindicdan con el patrón que indicamos.
+```bash
+sed -n "/127.0.0.1/p"  file.txt
+```
+
+Eliminar la linea indicada. 
+```bash
+sed -e '1d' file.txt
+```
