@@ -30,12 +30,12 @@ Ver los usuarios del sistema en passwd indicando un delimitador.
 cat /etc/passwd | awk -F ":" '{print $1}'
 ```
 
-Otra forma usando la variables especial.
+Otra forma de hacer lo anterior, pero usando la variables especial.
 ```bash
 awk '{print $1}' FS=':' /etc/passwd
 ```
 
-Ver la linea numero 10 del fichero indicado. 
+Ver la linea número 10 del fichero indicado. 
 ```bash
 cat /etc/passwd |awk NR==10
 ```
@@ -50,9 +50,7 @@ Uso básico como grep, para buscar un patrón.
 awk '/conde/' usuarios.txt
 ```
 
-Mostras el ultimo valor de la linea indicada con el patrón correspondiente y agregando texto. 
+Mostrar el ultimo valor de la linea indicada con el patrón correspondiente y agregando texto. 
 ```bash
 cat /etc/shells | awk -F "/" 'NR>1{print "[!] Shell: "$NF}'
 ```
-
-
