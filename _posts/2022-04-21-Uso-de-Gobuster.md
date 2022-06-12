@@ -44,5 +44,5 @@ gobuster dir -u http://192.168.0.11/ -w /usr/share/wordlists/dirbuster/directory
 ```
 #### Búsqueda de subdominios 
 ```bash
-gobuster dns -d http://h4cktrick.com/ -w /usr/share/wordlists/subdomains.txt -t 100 -o SubDomains.txt 
+gobuster vhost -u http://h4cktrick.com/ -w /usr/share/wordlists/subdomains.txt -t 100 -o SubDomains.txt 
 ```
