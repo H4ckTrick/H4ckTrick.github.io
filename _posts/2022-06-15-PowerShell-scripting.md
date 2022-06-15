@@ -63,6 +63,11 @@ Dentro de PowerShell, tenemos varias variables que son muy útiles a la hora de 
 - **$IsMacOS** ➜ Indica true si el S.O es Mac OS
 - **$null** ➜ Con esta variable podemos indicar si algo es nulo, o si por ejemplo queremos redirigir salidas 
 
+Para nosotros crear una variables solo debemos indicar en consola o script la siguiente sintaxis: 
+```powershell 
+$variable="Conde"
+```
+
 ### Redirecciones  
 Al igual que en Linux, nostros podemos realizar redirecciones tanto del STDIN, STDOUT y STDERR. Veamos todos los ejemplos posibles: 
 Redireccionamos el STDOUT al fichero ruta.txt
