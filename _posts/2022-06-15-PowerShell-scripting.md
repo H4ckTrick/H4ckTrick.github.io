@@ -124,5 +124,5 @@ Otra cosa muy curiosa, es que para realizar saltos de linea, tabulaciones y dem√
 
 Ejemplo completo: 
 ```powershell 
-Write-Host -ForeGroundColor Yellow "Hola Jose `n" 
+Write-Host -ForeGroundColor Yellow "Hola Jose`n" 
 ```
