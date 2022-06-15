@@ -26,7 +26,7 @@ WPScan, es una herramienta que nos permite hacer una enumeración completa de Wo
 #### Enumeración básica de wordpress
 
 ```bash 
-wspcan --url http://prueba.com 
+wpscan --url http://prueba.com 
 ```
 
 #### Enumeración de usuarios 
@@ -44,7 +44,7 @@ Dentro del modo de enumeración tenemos varios usos:
 - m ➜ Media 
 
 ```bash 
-wspcan --url http://prueba.com --no-banner -e u 
+wpscan --url http://prueba.com --no-banner -e u 
 ```
 
 #### Fuerza bruta para usuarios
