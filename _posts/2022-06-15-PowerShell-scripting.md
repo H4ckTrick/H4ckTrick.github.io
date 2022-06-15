@@ -20,5 +20,10 @@ PowerShell es un shell de comandos moderno que incluye las mejores característi
 ### Ayuda
 Para pedir ayuda en PowerShell, podemos utilizar el siguiente cmdlet: 
 ```powershell 
-Get-Help
+Get-Help <cmdlet-name>
+```
+
+Tambien podemos actualizar la ayuda (Debemos estar como administrador), para ello: 
+```powershell 
+Update-Help
 ```
