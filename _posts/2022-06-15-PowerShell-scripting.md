@@ -94,7 +94,7 @@ Redireccionar mensajes de depuración
 ```powershell 
 pwd 5> debug.txt
 ```
-Para redireccionar todo los visto usaremos el \*. 
+Para redireccionar todo los visto usaremos el "\*". 
 ```powershell 
 pwd *> all.txt
 ```
