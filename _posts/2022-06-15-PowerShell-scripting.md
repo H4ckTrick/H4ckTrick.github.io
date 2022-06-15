@@ -67,7 +67,10 @@ Para nosotros crear una variables solo debemos indicar en consola o script la si
 ```powershell 
 $variable="Conde"
 ```
-
+Otra forma de crearlas em pidiendole un input a al usuario. 
+```powershell 
+$variable= Read-Host -Prompt "[!] Indica un valor"
+```
 ### Redirecciones  
 Al igual que en Linux, nostros podemos realizar redirecciones tanto del STDIN, STDOUT y STDERR. Veamos todos los ejemplos posibles: 
 
