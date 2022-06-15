@@ -107,3 +107,22 @@ En resumen:
 -  3 ➜ Warning 
 -  4 ➜ Verbose 
 -  5 ➜ Debug 
+
+### Mensajes por pantalla 
+Al igual que en batch, bash, python y demás podemos mostrar mensajes por terminal. Para hacerlos con powershell, usaremos el siguiente cmdlet: 
+```powershell 
+Write-Host
+```
+Yo lo suelo usar mucho, y concretamente le agrego 3 parámetros muy interesantes. 
+- -nonewline ➜ No hace salto de linea 
+- -ForegroundColor ➜ Cambiamos el color de la letra 
+- -BackgroundColor➜ Cambiamos el color de fondo del mensaje 
+
+Otra cosa muy curiosa, es que para realizar saltos de linea, tabulaciones y demás no se usa "\n", "\t", etc, se usa lo siguiente: 
+- \`n ➜ Salto de linea 
+- \`t ➜ Tabulación 
+
+Ejemplo completo: 
+```powershell 
+Write-Host -ForeGroundColor Yellow "Hola Jose `n" 
+```
