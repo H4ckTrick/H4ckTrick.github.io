@@ -107,6 +107,20 @@ Para redireccionar todo los visto usaremos el "\*".
 pwd *> all.txt
 ```
 
+Otra forma de redireccionar es usar los propios cmdlets de powershell: 
+Redireccionamos el STDOUT.
+```powershell 
+pwd | Out-Null
+```
+Almacenar la salida en un fichero.
+```powershell 
+pwd | Out-file ruta.txt
+```
+Incluso podemos hacer una salida a una interfaz gráfica. 
+```powershell 
+pwd | Out-GridView
+```
+
 En resumen: 
 -  \* ➜ Todo el  output
 -  1 ➜ STDOUT
