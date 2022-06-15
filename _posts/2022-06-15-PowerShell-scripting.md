@@ -70,6 +70,7 @@ $variable="Conde"
 
 ### Redirecciones  
 Al igual que en Linux, nostros podemos realizar redirecciones tanto del STDIN, STDOUT y STDERR. Veamos todos los ejemplos posibles: 
+
 Redireccionamos el STDOUT al fichero ruta.txt
 ```powershell 
 pwd > ruta.txt
