@@ -10,6 +10,10 @@ author: Conde
 - [Alias](#alias)
 - [Variables](#variables)
 - [Redirecciones](#redirecciones)
+- [Mensajes por pantalla](#mensajes-por-pantalla)
+
+
+En este post veremos una pequeña introducción a PowerShell, desde lo más básico (Es recomendable seguir el orden de los post). Este post, sera la primera parte de todos, donde ya podrás ir encontrando muchos de los tips que yo utilizo. 
 
 ### Definición 
 PowerShell es un shell de comandos moderno que incluye las mejores características de otros shells populares. A diferencia de la mayoría de los shells que solo aceptan y devuelven texto, PowerShell acepta y devuelve objetos .NET. El shell incluye las siguientes características:
