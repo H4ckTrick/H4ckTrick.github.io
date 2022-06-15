@@ -114,9 +114,9 @@ Al igual que en batch, bash, python y demás podemos mostrar mensajes por termin
 Write-Host
 ```
 Yo lo suelo usar mucho, y concretamente le agrego 3 parámetros muy interesantes. 
-- -nonewline ➜ No hace salto de linea 
-- -ForegroundColor ➜ Cambiamos el color de la letra 
-- -BackgroundColor➜ Cambiamos el color de fondo del mensaje 
+- **-nonewline** ➜ No hace salto de linea 
+- **-ForegroundColor** ➜ Cambiamos el color de la letra 
+- **-BackgroundColor** ➜ Cambiamos el color de fondo del mensaje 
 
 Otra cosa muy curiosa, es que para realizar saltos de linea, tabulaciones y demás no se usa "\n", "\t", etc, se usa lo siguiente: 
 - \`n ➜ Salto de linea 
