@@ -33,30 +33,35 @@ Update-Help
 
 ### Alias
 Los alias, no son más que otra forma de ejecutar el mismo cmdlet, esto ocurre al igual en Linux. Mis Alias favoritos y más usados son: 
-- ? ➜ Where-Object
-- % ➜ ForEach-Object
-- gc ➜ Get-Content
-- cp ➜ Copy-Item 
-- fl ➜ Format-List
-- rm ➜ Remove-Item 
-- sls ➜ Select-String
-- diff ➜ Compare-Object
-- sort ➜ Sort-Object
-- sleep ➜ Start-Sleep
+- **?** ➜ Where-Object
+- **%** ➜ ForEach-Object
+- **gc** ➜ Get-Content
+- **cp** ➜ Copy-Item 
+- **fl** ➜ Format-List
+- **rm** ➜ Remove-Item 
+- **sls** ➜ Select-String
+- **diff** ➜ Compare-Object
+- **sort** ➜ Sort-Object
+- **sleep** ➜ Start-Sleep
 
 Para crear nosotros nuestros alias usaremos en siguiente cmdlet: 
 ```powershell 
 Set-Alias -Name pwd -Value Get-Location
 ```
 
+para ver los alias por defecto de PowerShell, usaremos el siguiente cmdlet: 
+```powershell 
+Alias
+```
+
 ### Variables 
 Dentro de PowerShell, tenemos varias variables que son muy útiles a la hora de hacer nuestros script, que son: 
-- $_ ➜ Está variable se acutaliza constantemente dependiendo de los campos que haya en la condición indicada
-- $? ➜ Mustra el codigo de salida del comando al igual que en linux (0 es true, 1 es false)
-- $IsLinux ➜ Indica true si el S.O es Linux
-- $IsWindows ➜ Indica true si el S.O es Windows
-- $IsMacOS ➜ Indica true si el S.O es Mac OS
-- $null ➜ Con esta variable podemos indicar si algo es nulo, o si por ejemplo queremos redirigir salidas 
+- **$_** ➜ Está variable se acutaliza constantemente dependiendo de los campos que haya en la condición indicada
+- **$?** ➜ Mustra el codigo de salida del comando al igual que en linux (0 es true, 1 es false)
+- **$IsLinux** ➜ Indica true si el S.O es Linux
+- **$IsWindows** ➜ Indica true si el S.O es Windows
+- **$IsMacOS** ➜ Indica true si el S.O es Mac OS
+- **$null** ➜ Con esta variable podemos indicar si algo es nulo, o si por ejemplo queremos redirigir salidas 
 
 ### Redirecciones  
 Al igual que en Linux, nostros podemos realizar redirecciones tanto del STDIN, STDOUT y STDERR. Veamos todos los ejemplos posibles: 
@@ -90,7 +95,7 @@ pwd *> all.txt
 ```
 
 En resumen: 
--  * ➜ Todo el  output
+-  \* ➜ Todo el  output
 -  1 ➜ STDOUT
 -  2 ➜ STDERR
 -  3 ➜ Warning 
