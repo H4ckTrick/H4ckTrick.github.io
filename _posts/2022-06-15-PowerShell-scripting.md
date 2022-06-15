@@ -6,7 +6,7 @@ author: Conde
 
 ## Índice
 - [Definición](#definción)
-
+- [Ayuda](#Ayuda)
 
 ### Definición 
 PowerShell es un shell de comandos moderno que incluye las mejores características de otros shells populares. A diferencia de la mayoría de los shells que solo aceptan y devuelven texto, PowerShell acepta y devuelve objetos .NET. El shell incluye las siguientes características:
@@ -16,3 +16,9 @@ PowerShell es un shell de comandos moderno que incluye las mejores característi
 - Admite alias de comando y parámetro.
 - Canalización para encadenar comandos.
 - Sistema de ayuda en la consola, similar a las páginas man de UNIX.
+
+### Ayuda
+Para pedir ayuda en PowerShell, podemos utilizar el siguiente cmdlet: 
+```powershell 
+Get-Help
+```
